@@ -34,3 +34,13 @@ def won?(board)
   end
   false
 end
+
+def full?(board)
+  if board.detect {|i| i == " " || i == nil}
+    false
+  else
+    true
+  end
+end
+
+
